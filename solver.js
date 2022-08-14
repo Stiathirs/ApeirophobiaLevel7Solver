@@ -36,6 +36,6 @@ function update(){
         output.innerHTML = stringOut;
     }
     else{
-        output = "Invalid number of orbs, there should be exactly six."
+        output.innerHTML = "Invalid number of orbs, there should be exactly six."
     }
 }
