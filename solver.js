@@ -7,13 +7,13 @@ var purple = document.getElementById("purple");
 var orange = document.getElementById("orange");
 var output = document.getElementById("output");
 
-red.onchange = (event) => update;
-green.onchange = (event) => update;
-blue.onchange = (event) => update;
-grey.onchange = (event) => update;
-yellow.onchange = (event) => update;
-purple.onchange = (event) => update;
-orange.onchange = (event) => update;
+red.addEventListener("change",update);
+green.addEventListener("change",update);
+blue.addEventListener("change",update);
+grey.addEventListener("change",update);
+yellow.addEventListener("change",update);
+purple.addEventListener("change",update);
+orange.addEventListener("change",update);
 
 function update(){
     if (red.value + green.value + blue.value + grey.value + yellow.value + purple.value + orange.value == 6){
