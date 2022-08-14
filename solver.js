@@ -15,11 +15,11 @@ function update(){
         if(red.value > 0){
             stringOut += red.value + "1"
         }
-        if(blue.value > 0){
-            stringOut += blue.value + "2"
-        }
         if(green.value > 0){
-            stringOut += green.value + "3"
+            stringOut += green.value + "2"
+        }
+        if(blue.value > 0){
+            stringOut += blue.value + "3"
         }
         if(grey.value > 0){
             stringOut += grey.value + "4"
