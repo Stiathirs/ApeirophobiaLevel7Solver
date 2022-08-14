@@ -5,56 +5,18 @@
     <body>
         <h1>Apeirophobia Level 7 "The End" Orb Solver</h1>
         <h2>Because apparently some people can't solve this.</h2>
-        <h4>Orb Counts:</h4><hr>
-        <label for="red">Red: </label><input type="number" id="red" min="0" value="0" max="6" onchange="update()"><br>
-        <label for="green">Green: </label><input type="number" id="green" min="0" value="0" max="6" onchange="update()"><br>
-        <label for="blue">Blue: </label><input type="number" id="blue" min="0" value="0" max="6" onchange="update()"><br>
-        <label for="grey">Grey: </label><input type="number" id="grey" min="0" value="0" max="6" onchange="update()"><br>
-        <label for="yellow">Yellow: </label><input type="number" id="yellow" min="0" value="0" max="6" onchange="update()"><br>
-        <label for="purple">Purple: </label><input type="number" id="purple" min="0" value="0" max="6" onchange="update()"><br>
-        <label for="orange">Orange: </label><input type="number" id="orange" min="0" value="0" max="6" onchange="update()"><br>
+        <h3>Orb Counts:</h3><hr>
+        <label for="red">Red: </label><input type="number" id="red" min="0" value="0" max="6"><br>
+        <label for="green">Green: </label><input type="number" id="green" min="0" value="0" max="6"><br>
+        <label for="blue">Blue: </label><input type="number" id="blue" min="0" value="0" max="6"><br>
+        <label for="grey">Grey: </label><input type="number" id="grey" min="0" value="0" max="6"><br>
+        <label for="yellow">Yellow: </label><input type="number" id="yellow" min="0" value="0" max="6"><br>
+        <label for="purple">Purple: </label><input type="number" id="purple" min="0" value="0" max="6"><br>
+        <label for="orange">Orange: </label><input type="number" id="orange" min="0" value="0" max="6"><br>
         <br>
-        <h4>Code:</h4><hr>
-        <blockquote id="output"></blockquote>
-        <script>var red = document.getElementById("red");
-            var green = document.getElementById("green");
-            var blue = document.getElementById("blue");
-            var grey = document.getElementById("grey");
-            var yellow = document.getElementById("yellow");
-            var purple = document.getElementById("purple");
-            var orange = document.getElementById("orange");
-            var output = document.getElementById("output");
-            
-            function update(){
-                if (red.value + green.value + blue.value + grey.value + yellow.value + purple.value + orange.value == 6){
-                    var stringOut = "";
-                    if(red.value > 0){
-                        stringOut += red.value + "1"
-                    }
-                    if(blue.value > 0){
-                        stringOut += blue.value + "2"
-                    }
-                    if(green.value > 0){
-                        stringOut += green.value + "3"
-                    }
-                    if(grey.value > 0){
-                        stringOut += grey.value + "4"
-                    }
-                    if(yellow.value > 0){
-                        stringOut += yellow.value + "5"
-                    }
-                    if(purple.value > 0){
-                        stringOut += purple.value + "6"
-                    }
-                    if(orange.value > 0){
-                        stringOut += orange.value + "7"
-                    }
-                    output.innerHTML = stringOut;
-                }
-                else{
-                    output = "Invalid number of orbs, there should be exactly six."
-                }
-            }</script>
+        <h3>Code:</h3><hr>
+        <p id="output"></p>
+        <script src="solver.js"></script>
         <noscript>This page requires JavaScript to run, either your browser doesn't support JavaScript, or it's disabled in your browser settings.</noscript>
     </body>
 </html>
