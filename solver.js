@@ -10,7 +10,7 @@ var output = document.getElementById("output");
 document.querySelectorAll("input").forEach(elem => elem.addEventListener("change",update));
 
 function update(){
-    if (red.value + green.value + blue.value + grey.value + yellow.value + purple.value + orange.value == 6){
+    if (Number(red.value) + Number(green.value) + Number(blue.value) + Number(grey.value) + Number(yellow.value) + Number(purple.value) + Number(orange.value) == 6){
         var stringOut = "";
         if(red.value > 0){
             stringOut += red.value + "1"
